@@ -37,6 +37,13 @@ export const SidebarS = styled.div(
     background-color: ${colors.darkBlue};
     border-right: 1px solid ${colors.black};
     height: 100vh;
+
+    .logo {
+      font-family: ${fonts.logoFont};
+      h1 {
+        letter-spacing: 5px;
+      }
+    }
   `
 )
 

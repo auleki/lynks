@@ -8,10 +8,7 @@ import { current } from 'immer';
 
 function App() {
   const [collapsed, setCollapsed] = useState<boolean>(false)
-  
-  const currentWidth = collapsed ? 70 : 300
-
-
+  const currentWidth = collapsed ? 150 : 300
   
   return (
     <AppContainer width={currentWidth}>
