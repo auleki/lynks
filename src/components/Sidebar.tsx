@@ -14,36 +14,39 @@ const Sidebar = (props: ISidebarProps) => {
   const toggleSidebar = () => props.setCollapsed(!props.collapsed)
 
   return (
-    <SidebarS width={props.width}>
-      <div className="logo">
-        <h1>LYNKS</h1>
-      </div>
+    <SidebarS width={props.width} collapsed={props.collapsed}>
+      {!props.collapsed && (
+        <div className="logo">
+          <h1>LYNKS</h1>
+        </div>
+      )}
+
 
       <div className="nav__links">
-        <NavLink to="/">
-          <span className="icon"></span>
+        <NavLink exact to="/">
+          <span className="icon">{icons.home}</span>
           <div className="text">Home</div>
         </NavLink>
-        <NavLink to="/">
-          <span className="icon"></span>
+        <NavLink to="/explore">
+          <span className="icon">{icons.explore}</span>
           <div className="text">Explore</div>
         </NavLink>
-        <NavLink to="/">
-          <span className="icon"></span>
+        <NavLink to="/saved">
+          <span className="icon">{icons.saved}</span>
           <div className="text">Saved</div>
         </NavLink>
-        <NavLink to="/">
-          <span className="icon"></span>
+        <NavLink to="/trending">
+          <span className="icon">{icons.hashtag}</span>
           <div className="text">Trending</div>
         </NavLink>
-        <NavLink to="/">
-          <span className="icon"></span>
+        <NavLink to="/history">
+          <span className="icon">{icons.history}</span>
           <div className="text">History</div>
         </NavLink>
 
       </div>
       <Button onClick={toggleSidebar}>
-        <i className="bx bx-user"></i>
+        {icons.home}
       </Button>
     </SidebarS>
   )

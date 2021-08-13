@@ -8,15 +8,15 @@ import { current } from 'immer';
 
 function App() {
   const [collapsed, setCollapsed] = useState<boolean>(false)
-  const currentWidth = collapsed ? 150 : 300
-  
+  const currentWidth = collapsed ? 80 : 300
+
   return (
     <AppContainer width={currentWidth}>
-      <Sidebar 
-        collapsed={collapsed} 
-        setCollapsed={setCollapsed} 
+      <Sidebar
+        collapsed={collapsed}
+        setCollapsed={setCollapsed}
         width={currentWidth}
-        />
+      />
       <PageRoutes />
     </AppContainer>
   );

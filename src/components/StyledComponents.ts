@@ -26,11 +26,14 @@ export const AppContainer = styled.div(
 )
 
 export const SidebarS = styled.div(
-  (p: INavProps) => css`
+  (p: ISideNavProps) => css`
     position: fixed;
     left: 0;
     top: 0;
-    padding: 1em;
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: ${p.collapsed ? 'flex-start' : 'center'};
     width: ${p.width}px;
     overflow: hidden;
     transition: width 200ms ease-in;
@@ -44,13 +47,38 @@ export const SidebarS = styled.div(
         letter-spacing: 5px;
       }
     }
+
+    .nav__links {
+      margin-top: 3em;
+      a {
+        color: ${colors.altWhite};
+        text-decoration: none;
+        /* margin: 1em 0; */
+        display: flex;
+        border-radius: 4px;
+        transition: background 100ms ease-in;
+        padding: .2em 1em;
+        align-items: center;
+        line-height: 2.5em;
+        gap: 1em;
+        font-size: 1.3em;
+        &:hover {
+          background: ${colors.altWhite};
+          color: ${colors.orange};
+        }
+        &.active {
+          /* background: ${colors.orange};           */
+          color: ${colors.orange};          
+        }
+      }
+    }
   `
 )
 
 export const Button = styled.div(
   () =>css`
     padding: 1em;
-    display: inline-flex;
+    display: inline-block;
     border-radius: 4px;
     margin: .5em 0;
     cursor: pointer;
@@ -58,7 +86,8 @@ export const Button = styled.div(
      color 200ms ease-in,
      transform 200ms ease-out;
     font-size: 1em;
-    background: ${colors.orange};
+    background: ${colors.altWhite};
+    color: ${colors.orange};
     &:hover {
       background: ${colors.black};
       color: ${colors.altWhite};

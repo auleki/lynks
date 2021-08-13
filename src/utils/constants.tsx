@@ -1,4 +1,5 @@
 import * as BIcons from "react-icons/bi";
+import * as BSIcon from "react-icons/bs"
 
 export const colors = {
   yellow: "#E9DF00",
@@ -17,12 +18,22 @@ export const fonts = {
   logoFont: "Luckiest Guy",
 }
 
+// export const icons = {
+//   home: BIcons.BiHome,
+//   saved: BIcons.BiBookmark,
+//   hashtag: BIcons.BiHash,
+//   explore: BIcons.BiPlanet,
+//   dashboard: BIcons.BiGridAlt,
+//   collections: BIcons.BiHive,
+//   history: BIcons.BiHistory
+// }
+
 export const icons = {
-  home: BIcons.BiHome,
-  saved: BIcons.BiBookmark,
-  hashtag: BIcons.BiHash,
-  explore: BIcons.BiPlanet,
-  dashboard: BIcons.BiGridAlt,
-  collections: BIcons.BiHive,
-  history: BIcons.BiHistory
+  home: <BSIcon.BsHouse />,
+  saved: <BSIcon.BsBookmark />,
+  hashtag: <BSIcon.BsHash />,
+  explore: <BIcons.BiPlanet />,
+  dashboard: <BSIcon.BsGrid />,
+  collections: <BSIcon.BsFolder />,
+  history: <BIcons.BiHistory />
 }
