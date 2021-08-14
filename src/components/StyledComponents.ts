@@ -16,7 +16,6 @@ export const AppContainer = styled.div(
     background-color: ${colors.darkBlue};
     min-height: 109vh;
     color: white;
-    /* width: ; */
     font-family: ${fonts.paragraphFont};
     padding: 1em 3em 1em 0;
     transition: padding-left 200ms ease-in;
@@ -53,7 +52,6 @@ export const SidebarS = styled.div(
       a {
         color: ${colors.altWhite};
         text-decoration: none;
-        /* margin: 1em 0; */
         display: flex;
         border-radius: 4px;
         transition: background 100ms ease-in;
@@ -67,7 +65,6 @@ export const SidebarS = styled.div(
           color: ${colors.orange};
         }
         &.active {
-          /* background: ${colors.orange};           */
           color: ${colors.orange};          
         }
       }
@@ -89,7 +86,7 @@ export const Button = styled.div(
     background: ${colors.altWhite};
     color: ${colors.orange};
     &:hover {
-      background: ${colors.black};
+      background: ${colors.orange};
       color: ${colors.altWhite};
     }
     &:active {
@@ -172,6 +169,7 @@ export const LynkCardS = styled.div(
       position: relative;
       font-size: .8em;
       border-radius: 3px;
+      text-transform: uppercase;
       padding: .5em;
       background: ${colors.orange};
     }
