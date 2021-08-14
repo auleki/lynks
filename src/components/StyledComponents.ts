@@ -97,3 +97,22 @@ export const Button = styled.div(
     }
   `
 )
+
+export const PageContainer = styled.div(
+  () => css`
+   height: 100%;
+
+   .title {
+    border-bottom: 2px solid ${colors.orange};
+    display: inline-flex;
+    padding: .5em 1em;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .8);
+    transition: box-shadow 200ms ease-in;
+
+    &:hover {
+      box-shadow: none;
+    }
+   }
+ `
+)
+

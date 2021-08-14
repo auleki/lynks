@@ -1,8 +1,12 @@
+import { PageContainer } from "../../components/StyledComponents"
+
 const TrendingPage = () => {
   return (
-    <div>
-      <h1>Trending Page</h1>
-    </div>
+    <PageContainer>
+      <div className="title">
+        <h1>Trending</h1>
+      </div>
+    </PageContainer>
   )
 }
 

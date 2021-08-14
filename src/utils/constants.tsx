@@ -35,5 +35,6 @@ export const icons = {
   explore: <BIcons.BiPlanet />,
   dashboard: <BSIcon.BsGrid />,
   collections: <BSIcon.BsFolder />,
-  history: <BIcons.BiHistory />
+  history: <BIcons.BiHistory />,
+  toggle: <BIcons.BiCollapse />
 }

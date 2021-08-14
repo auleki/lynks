@@ -1,8 +1,12 @@
+import { PageContainer } from "../../components/StyledComponents"
+
 const ExplorePage = () => {
   return (
-    <div>
-      <h1>Explore Page</h1>
-    </div>
+    <PageContainer>
+      <div className="title">
+        <h1>Explore</h1>
+      </div>
+    </PageContainer>
   )
 }
 

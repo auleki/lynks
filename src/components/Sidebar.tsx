@@ -46,7 +46,7 @@ const Sidebar = (props: ISidebarProps) => {
 
       </div>
       <Button onClick={toggleSidebar}>
-        {icons.home}
+        {icons.toggle}
       </Button>
     </SidebarS>
   )
