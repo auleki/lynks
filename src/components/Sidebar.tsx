@@ -1,4 +1,4 @@
-import { Button, SidebarS } from "./StyledComponents"
+import { Button, IconButton, SidebarS } from "./StyledComponents"
 import { icons } from "../utils/constants"
 import { NavLink } from "react-router-dom"
 
@@ -22,29 +22,30 @@ const Sidebar = (props: ISidebarProps) => {
       <div className="nav__links">
         <NavLink exact to="/">
           <span className="icon">{icons.home}</span>
-          <div className="text">Home</div>
+          <span className="text">Home</span>
         </NavLink>
         <NavLink to="/explore">
           <span className="icon">{icons.explore}</span>
-          <div className="text">Explore</div>
+          <span className="text">Explore</span>
         </NavLink>
         <NavLink to="/saved">
           <span className="icon">{icons.saved}</span>
-          <div className="text">Saved</div>
+          <span className="text">Saved</span>
         </NavLink>
         <NavLink to="/trending">
           <span className="icon">{icons.hashtag}</span>
-          <div className="text">Trending</div>
+          <span className="text">Trending</span>
         </NavLink>
         <NavLink to="/history">
           <span className="icon">{icons.history}</span>
-          <div className="text">History</div>
+          <span className="text">History</span>
         </NavLink>
+        <IconButton onClick={toggleSidebar}>
+          {!props.collapsed ? icons.altArrowLeft : icons.altArrowRight}
+        </IconButton>
+
       </div>
 
-      <Button onClick={toggleSidebar}>
-        {icons.toggle}
-      </Button>
     </SidebarS>
   )
 }

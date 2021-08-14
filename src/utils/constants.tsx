@@ -30,7 +30,9 @@ export const icons = {
   toggle: <BIcons.BiCollapse />,
   link: <BSIcon.BsArrowRight />,
   options: <BIcons.BiDotsVerticalRounded />,
-  save: <BSIcon.BsBookmarkPlus />
+  save: <BSIcon.BsBookmarkPlus />,
+  altArrowLeft: <BSIcon.BsArrowBarLeft />,
+  altArrowRight: <BSIcon.BsArrowBarRight />,
 }
 
 export const lynks = [

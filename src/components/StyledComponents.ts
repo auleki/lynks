@@ -32,7 +32,6 @@ export const SidebarS = styled.div(
     padding: 2em 1em;
     display: flex;
     flex-direction: column;
-    /* align-items: ${p.collapsed ? 'flex-start' : 'center'}; */
     /* align-items: center; */
     width: ${p.width}px;
     overflow: hidden;
@@ -59,8 +58,8 @@ export const SidebarS = styled.div(
         padding: .2em 1em;
         align-items: center;
         line-height: 2.5em;
-        gap: 1em;
-        font-size: 1.3em;
+        column-gap: 1em;
+        font-size: 1.2em;
         .text {
           /* background: ${colors.orange}; */
           display: ${p.collapsed ? 'none' : 'normal'};
@@ -77,7 +76,7 @@ export const SidebarS = styled.div(
   `
 )
 
-export const Button = styled.div(
+export const Button = styled.button(
   () =>css`
     padding: 1em;
     display: inline-block;
@@ -96,6 +95,22 @@ export const Button = styled.div(
     }
     &:active {
       transform: translateY(.5em);
+    }
+  `
+)
+
+export const IconButton = styled.button(
+  () => css`
+    background: ${colors.altWhite};
+    margin-top: 2em;
+    color: ${colors.orange};
+    font-size: 1em;
+    font-weight: 800;
+    padding: 1em;
+    border-radius: 3px;
+    &:hover {
+      background: ${colors.black};
+      color: ${colors.white};
     }
   `
 )
