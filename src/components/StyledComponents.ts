@@ -17,7 +17,7 @@ export const AppContainer = styled.div(
     min-height: 109vh;
     color: white;
     font-family: ${fonts.paragraphFont};
-    padding: 1em 3em 1em 0;
+    padding: 1em 1em 1em 0;
     transition: padding-left 200ms ease-in;
     padding-left: ${p.width + 25}px;
     
@@ -128,7 +128,7 @@ export const LynkCardS = styled.div(
     display: flex;
     flex-direction: column;
     padding-bottom: 2em;
-    
+
     .link {
       display: flex;
       color: ${colors.yellow};
