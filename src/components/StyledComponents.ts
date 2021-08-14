@@ -32,7 +32,8 @@ export const SidebarS = styled.div(
     padding: 2em 1em;
     display: flex;
     flex-direction: column;
-    align-items: ${p.collapsed ? 'flex-start' : 'center'};
+    /* align-items: ${p.collapsed ? 'flex-start' : 'center'}; */
+    /* align-items: center; */
     width: ${p.width}px;
     overflow: hidden;
     transition: width 200ms ease-in;
@@ -60,6 +61,10 @@ export const SidebarS = styled.div(
         line-height: 2.5em;
         gap: 1em;
         font-size: 1.3em;
+        .text {
+          /* background: ${colors.orange}; */
+          display: ${p.collapsed ? 'none' : 'normal'};
+        }
         &:hover {
           background: ${colors.altWhite};
           color: ${colors.orange};
@@ -123,7 +128,6 @@ export const LynkCardS = styled.div(
     display: flex;
     flex-direction: column;
     padding-bottom: 2em;
-    /* justify-content: space-between; */
     
     .link {
       display: flex;
@@ -203,13 +207,11 @@ export const LynkCardS = styled.div(
 
 export const LynksContainer = styled.section(
   () => css`
-    /* display: grid;
-    grid-template-columns: repeat(3, 2fr); */
+    gap: 1em;
     display: flex;
     flex-wrap: wrap;
-    margin: 2em 0;
-    /* row-gap: 2em;
-    column-gap: 2em; */
+    margin-top: 2em;
+
  `
 )
 
