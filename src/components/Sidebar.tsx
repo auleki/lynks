@@ -1,4 +1,4 @@
-import { Button, IconButton, SidebarS } from "./StyledComponents"
+import { IconButton, SidebarS } from "./StyledComponents"
 import { icons } from "../utils/constants"
 import { NavLink } from "react-router-dom"
 
