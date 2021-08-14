@@ -1,4 +1,5 @@
-import { PageContainer } from "../../components/StyledComponents"
+import { LynksContainer, PageContainer } from "../../components/StyledComponents"
+import LynkCard from "../../components/LynkCard"
 
 
 const Homepage = () => {
@@ -8,6 +9,17 @@ const Homepage = () => {
         <h1>Listings</h1>
       </div>
 
+      <LynksContainer>
+        <LynkCard />
+        <LynkCard />
+        <LynkCard />
+        <LynkCard />
+        <LynkCard />
+        <LynkCard />
+        <LynkCard />
+        <LynkCard />
+        <LynkCard />
+      </LynksContainer>
 
     </PageContainer>
   )

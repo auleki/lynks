@@ -6,6 +6,8 @@ const HistoryPage = () => {
       <div className="title">
         <h1>History</h1>
       </div>
+
+
     </PageContainer>
   )
 }

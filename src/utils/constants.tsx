@@ -7,7 +7,8 @@ export const colors = {
   altWhite: "#F2F2F2",
   white: "#fff",
   black: "#1a1a1a",
-  darkBlue: "#03071e"
+  darkBlue: "#03071e",
+  gray: "#ddd"
 }
 
 export const fonts = {
@@ -36,5 +37,8 @@ export const icons = {
   dashboard: <BSIcon.BsGrid />,
   collections: <BSIcon.BsFolder />,
   history: <BIcons.BiHistory />,
-  toggle: <BIcons.BiCollapse />
+  toggle: <BIcons.BiCollapse />,
+  link: <BSIcon.BsArrowRight />,
+  options: <BIcons.BiDotsVerticalRounded />,
+  save: <BSIcon.BsBookmarkPlus />
 }

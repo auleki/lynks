@@ -116,3 +116,96 @@ export const PageContainer = styled.div(
  `
 )
 
+export const LynkCardS = styled.div(
+  () => css`
+    height: 100%;
+    box-shadow: 0 5px 10px 0 rgba(10, 10, 10, .6);
+    padding: 1em; 
+    position: relative;
+    
+    .link {
+      display: flex;
+      color: ${colors.yellow};
+      .icon {
+        font-size: 1.5em;
+        transition: 200ms transform ease-in;
+        transform: translateX(.1em);
+      }
+      &:hover {
+        color: ${colors.white};
+        .icon {
+          transform: translateX(.3em);
+        }
+      }
+    }
+
+    .save {
+      font-size: 1.5em;
+      transition: 250ms color ease-in;
+      &:hover {
+        color: ${colors.altWhite};
+        cursor: pointer;
+      }
+    }
+
+    .description {
+      margin: .5em 0;
+      color: ${colors.gray};
+      &:first-letter {
+        font-size: 1.5em;
+      }
+    }
+
+    .card__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 0;
+      .name {
+        display: inline-flex;
+        /* border-bottom: 1px solid white; */
+        /* color: ${colors.yellow}; */
+      }
+    }
+
+    .category {
+      position: relative;
+      font-size: .8em;
+      border-radius: 3px;
+      padding: .5em;
+      background: ${colors.orange};
+    }
+
+    .option__icon {
+      position: absolute;
+      font-size: 1.5em;
+      right: 1em;
+      top: .7em;
+      transition: color 250ms ease-in, 
+      transform 150ms ease-out;
+      cursor: pointer;
+      &:hover {
+        color: ${colors.orange};
+        transform: scale(1.5) rotateZ(-90deg);
+      }
+    }
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      color: ${colors.yellow};
+    }
+  `
+)
+
+export const LynksContainer = styled.section(
+  () => css`
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin: 2em 0;
+    row-gap: 2em;
+    column-gap: 2em;
+ `
+)
+
+// export const 
