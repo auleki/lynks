@@ -108,6 +108,9 @@ export const IconButton = styled.button(
     font-weight: 800;
     padding: 1em;
     border-radius: 3px;
+    &.drawer__icon {
+      position: absolute;
+    }
     &:hover {
       background: ${colors.black};
       color: ${colors.white};
@@ -136,12 +139,13 @@ export const PageContainer = styled.div(
 export const LynkCardS = styled.div(
   () => css`
     height: 100%;
-    box-shadow: 0 5px 10px 0 rgba(10, 10, 10, .6);
+    /* box-shadow: 0 5px 10px 0 rgba(10, 10, 10, .6); */
     padding: 1em; 
     position: relative;
     flex: 1 1 25rem;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .8);
     padding-bottom: 2em;
 
     .link {
@@ -226,7 +230,6 @@ export const LynksContainer = styled.section(
     display: flex;
     flex-wrap: wrap;
     margin-top: 2em;
-
  `
 )
 

@@ -40,10 +40,9 @@ const Sidebar = (props: ISidebarProps) => {
           <span className="icon">{icons.history}</span>
           <span className="text">History</span>
         </NavLink>
-        <IconButton onClick={toggleSidebar}>
+        <IconButton className="drawer__icon" onClick={toggleSidebar}>
           {!props.collapsed ? icons.altArrowLeft : icons.altArrowRight}
         </IconButton>
-
       </div>
 
     </SidebarS>
