@@ -9,18 +9,15 @@ export interface ISidebarProps {
 }
 
 const Sidebar = (props: ISidebarProps) => {
-  console.log('Width size', props)
-
   const toggleSidebar = () => props.setCollapsed(!props.collapsed)
-
   return (
     <SidebarS width={props.width} collapsed={props.collapsed}>
+
       {!props.collapsed && (
         <div className="logo">
           <h1>LYNKS</h1>
         </div>
       )}
-
 
       <div className="nav__links">
         <NavLink exact to="/">
@@ -43,8 +40,8 @@ const Sidebar = (props: ISidebarProps) => {
           <span className="icon">{icons.history}</span>
           <div className="text">History</div>
         </NavLink>
-
       </div>
+
       <Button onClick={toggleSidebar}>
         {icons.toggle}
       </Button>

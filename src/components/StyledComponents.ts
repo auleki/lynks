@@ -19,7 +19,7 @@ export const AppContainer = styled.div(
     font-family: ${fonts.paragraphFont};
     padding: 1em 3em 1em 0;
     transition: padding-left 200ms ease-in;
-    padding-left: ${p.width + 80}px;
+    padding-left: ${p.width + 25}px;
     
   `
 )
@@ -119,6 +119,11 @@ export const LynkCardS = styled.div(
     box-shadow: 0 5px 10px 0 rgba(10, 10, 10, .6);
     padding: 1em; 
     position: relative;
+    flex: 1 1 25rem;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+    /* justify-content: space-between; */
     
     .link {
       display: flex;
@@ -160,7 +165,7 @@ export const LynkCardS = styled.div(
       padding: 1em 0;
       .name {
         display: inline-flex;
-        /* border-bottom: 1px solid white; */
+        /* border-bottom: 1px solid y; */
         /* color: ${colors.yellow}; */
       }
     }
@@ -198,12 +203,13 @@ export const LynkCardS = styled.div(
 
 export const LynksContainer = styled.section(
   () => css`
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    /* display: grid;
+    grid-template-columns: repeat(3, 2fr); */
+    display: flex;
+    flex-wrap: wrap;
     margin: 2em 0;
-    row-gap: 2em;
-    column-gap: 2em;
+    /* row-gap: 2em;
+    column-gap: 2em; */
  `
 )
 
-// export const 

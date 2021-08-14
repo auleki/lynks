@@ -6,7 +6,7 @@ import Sidebar from "./components/Sidebar";
 
 
 function App() {
-  const [collapsed, setCollapsed] = useState<boolean>(false)
+  const [collapsed, setCollapsed] = useState<boolean>(true)
   const currentWidth = collapsed ? 80 : 300
 
   return (

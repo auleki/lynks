@@ -1,6 +1,6 @@
 import { LynksContainer, PageContainer } from "../../components/StyledComponents"
 import LynkCard from "../../components/LynkCard"
-
+import { lynks } from "../../utils/constants"
 
 const Homepage = () => {
   return (
@@ -10,15 +10,7 @@ const Homepage = () => {
       </div>
 
       <LynksContainer>
-        <LynkCard />
-        <LynkCard />
-        <LynkCard />
-        <LynkCard />
-        <LynkCard />
-        <LynkCard />
-        <LynkCard />
-        <LynkCard />
-        <LynkCard />
+        {lynks.map(lynk => <LynkCard key={lynk.id} lynk={lynk} />)}
       </LynksContainer>
 
     </PageContainer>

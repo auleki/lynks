@@ -1,25 +1,27 @@
 import { LynkCardS } from "./StyledComponents"
 import { icons } from "../utils/constants"
 
-function LynkCard() {
+export interface ILynkProps {
+  id: number
+  siteName: string
+  category: string
+  description: string
+  siteLink: string
+}
+
+function LynkCard(props: { lynk: ILynkProps }) {
   return (
     <LynkCardS>
-      {/* category info  */}
-      {/* <span className="option__icon">
-        {icons.options}
-      </span> */}
       <section className="card__title">
-        <h2 className="name">Punch Newspaper</h2>
-        <span className="category">SPORTS</span>
+        <h2 className="name">{props.lynk.siteName}</h2>
+        <span className="category">{props.lynk.category}</span>
       </section>
       <p className="description">
-        This is an online version of the Nigerian Punch Newspaper.
-        They have great information about things going on within
-        the country and outside of it.
+        {props.lynk.description}
       </p>
       <section className="options">
         <a
-          href="https://punchng.com"
+          href={props.lynk.siteLink}
           className="link"
           target="_blank"
           rel="noopener noreferrer">
